@@ -1,0 +1,9 @@
+<nav style="display: flex; justify-content: space-between; margin-bottom: 100px;">
+    <div>
+        <a routerLink="/dashboard" [style]="onNavSelect('/dashboard')">Dashboard</a>
+        <a routerLink="/heroes" [style]="onNavSelect('/heroes')">Heroes</a>
+    </div>
+    <div>
+        <a id="logout" (click)="onLogout()">logout</a>
+    </div>
+</nav>

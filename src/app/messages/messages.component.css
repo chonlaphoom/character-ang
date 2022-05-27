@@ -1,0 +1,7 @@
+.message-wrapper{
+    border-width: 1px solid;
+    border-style: solid;
+    padding: 1rem;
+    color: grey;
+    background-color: whitesmoke;
+}

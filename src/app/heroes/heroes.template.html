@@ -1,0 +1,24 @@
+<app-header></app-header>
+<h2>character list</h2>
+<ul class="heroes">
+    <li *ngFor="let hero of heroes">
+        <div style="display: flex;">
+            <span id="arrow"><img src="https://media.giphy.com/media/MZXmFVrbMA1qSDNGOt/giphy.gif" style="width: 30px; height: 50px;"/></span>
+            <a routerLink="/detail/{{hero.id}}">
+                <span class="badge">{{hero.id}}</span>
+                <span>{{hero.name}}</span>
+            </a>
+            <button type="button" class="delete" title="delete hero" (click)="delete(hero)">x</button>
+        </div>
+    </li>
+</ul>
+
+<div>
+    <label for="new-hero">new character name: </label>
+    <input id="new-hero" #heroName />
+    <br/>
+    <button type="button" class="add-button" (click)="add(heroName.value
+    ); heroName.value=''">
+      Add Character
+    </button>
+</div>
