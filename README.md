@@ -1,2 +1,2 @@
 # character-ang
-Angular learning purpose
+anuglar
